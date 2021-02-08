@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `Kihon_iko` (
+  `IKO_id` int(7) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `IKO_site` varchar(7) NOT NULL DEFAULT '',
+  `IKO_ku` varchar(8) NOT NULL DEFAULT '',
+  `IKO_kigo` varchar(8) NOT NULL DEFAULT '',
+  `IKO_grid` varchar(10) NOT NULL DEFAULT '',
+  `IKO_long` varchar(8) NOT NULL DEFAULT '0',
+  `IKO_short` varchar(8) NOT NULL DEFAULT '0',
+  `IKO_depth` varchar(8) NOT NULL DEFAULT '',
+  `IKO_dan` varchar(10) NOT NULL DEFAULT '',
+  `IKO_plan` varchar(10) NOT NULL DEFAULT '',
+  `IKO_maido` text NOT NULL,
+  `IKO_stage` char(3) NOT NULL DEFAULT '',
+  `IKO_jiki` text NOT NULL,
+  `IKO_biko` text NOT NULL,
+  `IKO_biko1` text NOT NULL,
+  PRIMARY KEY (`IKO_id`),
+  KEY `IKO_site` (`IKO_site`),
+  KEY `IKO_ku` (`IKO_ku`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8
