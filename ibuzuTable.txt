@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS `ibuzu` (
+  `PONO` int(6) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `Ph_name` varchar(18) NOT NULL DEFAULT '',
+  `Ph_site` varchar(7) NOT NULL DEFAULT '',
+  `Ph_Sname` varchar(30) NOT NULL DEFAULT '',
+  `Ph_Syomi` varchar(30) NOT NULL DEFAULT '',
+  `Ph_Kind` varchar(6) NOT NULL DEFAULT '',
+  `Ph_ku` varchar(8) NOT NULL DEFAULT '',
+  `IKO_kigo` varchar(30) NOT NULL DEFAULT '',
+  `Ph_toroku` varchar(100) NOT NULL,
+  `Ph_gapeNo` varchar(100) NOT NULL DEFAULT '',
+  `Ph_title` varchar(100) NOT NULL DEFAULT '',
+  `Ph_content` text NOT NULL,
+  `hizuke` date NOT NULL DEFAULT '0000-00-00',
+  PRIMARY KEY (`PONO`),
+  KEY `Ph_site` (`Ph_site`),
+  KEY `Ph_ku` (`Ph_ku`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8
